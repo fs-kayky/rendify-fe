@@ -10,7 +10,7 @@ import { ThemeService } from './modules/global/services/theme/theme.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  title = 'registra-me';
+  title = 'rendify';
   private themeService = inject(ThemeService);
 
   ngOnInit() {

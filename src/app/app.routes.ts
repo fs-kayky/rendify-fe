@@ -3,15 +3,15 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'singin',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
-    path: 'singin',
-    loadComponent: () => import('./modules/global/pages/singin/singin.component').then(m => m.SinginComponent)
+    path: 'home',
+    loadComponent: () => import("./modules/global/pages/home/home.component").then(m => m.HomeComponent)
   },
   {
     path: '**',
-    redirectTo: 'singin'
+    redirectTo: 'gome'
   }
 ];
